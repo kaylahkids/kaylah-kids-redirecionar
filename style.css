@@ -1,29 +1,43 @@
-body {
-    background-color: #f8f9fa;
   
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
   }
+  
+  
+  body {
+    background-color: #f8f9fa;
+   
+  }
+
+  :root{
+    --principal-color:#fcc83e;
+  }
+  
 
   .header {
     background-color: #f06292;
     color: #fff;
+    font-family: 'Noto Serif', serif;
     padding: 50px;
     
     text-align: center;
     
   }
 
- 
-
-  .content {
-    padding: 30px;
-    text-align: center;
+  .bg{
+    background-color: var(--principal-color);
   }
+
+
 
   .footer {
     background-color: #f06292;
     color: #fff;
     padding: 50px;
-    
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
 
@@ -32,7 +46,9 @@ body {
     background-color: #e91e63;
     border-color: #e91e63;
     color: #fff;
-    width: 300px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
     font-weight: bold;
     padding: 10px 20px;
     font-size: 18px;
@@ -49,45 +65,17 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.5);
   }
 
-  /* Estilização das informações da empresa */
-  .company-info {
-    font-size: 16px;
-    line-height: 1.6;
+  .h-100{
+    height: 100vh;
   }
 
-  .company-info strong {
-    font-weight: bold;
+  .img{
+    width: 600px;
   }
-
+   
   
-.container{
-     height: 100vh;
-     display: flex;
-    
-     background-color: #f4d030;
-     align-items: center;
-     justify-content: center;
-     
-     flex-direction: column;
-    
 
 
-}
-img{
-  
-  
-  width: 720px;
-  
-}
-
-.img{
-  margin: 50px;
-  height: 100vh;
-  background-color: #f4d030;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
  .butons{
   text-align: center;
   position: absolute;
@@ -97,7 +85,7 @@ img{
 }
 
 
-.btn-fluid{
+.btn-fluidi{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,39 +101,13 @@ span{
  
 }
 
-@media (max-width: 490px){
-  .container{
-    height: 78vh;
-  }
-  
-  
-  .butons{
-    box-sizing: content-box;
-    flex-direction: column;
-    width: 190px;
-    margin-left: 0px;
-    top: 580px;
-  }
-  
+ @media (max-width: 370px){
   .btn-whatsapp{
-    width: 190px;
-    margin-left: 2px;
-    padding: 5px 10px;
-    height: 70px;
-  }
-  .img{
-    margin-top: -45px;
-    height: 40vh;
-    
-  }
-  img{
-    margin-bottom: 80px;
+    width: 155px;
+   
   }
 
-  .header{
-    padding: 80px;
-  }
- 
+
+
 
 }
-
