@@ -113,7 +113,7 @@ span{
  
 }
 
-@media (max-width: 400px){
+@media (max-width: 490px){
   .container{
     height: 78vh;
   }
@@ -124,7 +124,7 @@ span{
     flex-direction: column;
     width: 190px;
     margin-left: 0px;
-    top: 560px;
+    top: 580px;
   }
   
   .btn-whatsapp{
@@ -148,8 +148,4 @@ span{
  
 
 }
-@media (max-width: 500px){
-  img{
-    margin-top: -120px;
-  }
-}
+
